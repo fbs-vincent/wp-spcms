@@ -1,0 +1,35 @@
+.contact-details {
+  ul li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    color: $color-light;
+
+    &:last-child {
+      margin-bottom: unset;
+      a {
+        display: inline-block;
+        color: $color-secondary;
+        font-family: "poppins-light";
+      }
+    }
+
+    svg {
+      width: 2rem;
+      height: 2rem;
+      margin-right: 1rem;
+      color: $color-light;
+    }
+  }
+
+  &--primary {
+    ul li {
+      color: $color-text;
+
+      svg {
+        color: $color-primary;
+      }
+    }
+  }
+}

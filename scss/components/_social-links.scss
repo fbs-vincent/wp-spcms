@@ -1,0 +1,39 @@
+.social-links {
+  margin-top: 4rem;
+  li {
+    display: inline-block !important;
+
+    svg {
+      margin-right: 2rem !important;
+      width: 3.2rem !important;
+      height: 3.2rem !important;
+      display: inline-block !important;
+      color: $color-light;
+      transition: 0.2s all ease-in-out;
+
+      &:hover {
+        color: $color-secondary;
+      }
+    }
+
+    &:last-child {
+      svg {
+        &:last-child {
+          margin-right: unset !important;
+        }
+      }
+    }
+  }
+
+  &--primary {
+    li {
+      svg {
+        color: $color-primary;
+
+        &:hover {
+          color: $color-secondary;
+        }
+      }
+    }
+  }
+}

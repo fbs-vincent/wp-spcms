@@ -1,0 +1,20 @@
+.about-card {
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+
+  &__wrapper {
+    padding: 4rem;
+
+    p {
+      &:last-of-type {
+        margin-bottom: unset !important;
+      }
+    }
+
+    a {
+      display: inline-block;
+      margin-top: 4rem;
+    }
+  }
+}

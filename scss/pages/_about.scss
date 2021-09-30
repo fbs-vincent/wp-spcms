@@ -1,0 +1,129 @@
+.about-intro {
+  padding: 8vh 0;
+  // background-color: #69cc69;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+
+    @media only screen and (max-width: 1024px) {
+      flex-direction: column-reverse;
+    }
+
+    &__img {
+      width: 100%;
+      img {
+        width: 100%;
+        display: block;
+      }
+
+      @media only screen and (max-width: 1024px) {
+        margin-bottom: 2rem;
+      }
+    }
+
+    &__content {
+      width: 100%;
+      // background-color: rgba($color: $color-light, $alpha: 0.8);
+      h2 {
+        text-transform: uppercase;
+        @media only screen and (max-width: 1024px) {
+          text-align: center;
+        }
+      }
+
+      p {
+        margin-bottom: 2rem;
+
+        &:last-of-type {
+          margin-bottom: unset;
+        }
+      }
+
+      a {
+        display: inline-block;
+        margin-top: 2rem;
+      }
+    }
+  }
+}
+
+.about-mission {
+  padding: 8vh 0;
+  background-color: $color-gray;
+
+  &__wrapper {
+    display: flex;
+
+    &__content {
+      width: 100%;
+      background-color: $color-light;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+
+      &__wrapper {
+        padding: 4rem;
+
+        p {
+          margin-bottom: 2rem;
+
+          &:last-child {
+            margin-bottom: unset;
+          }
+        }
+      }
+    }
+
+    &__img {
+      width: 100%;
+      display: flex;
+
+      @media only screen and (max-width: 1024px) {
+        display: none;
+      }
+
+      img {
+        display: block;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+.about-vision {
+  padding: 8vh 0;
+
+  &__wrapper {
+    &__img {
+      width: 100%;
+      display: flex;
+
+      @media only screen and (max-width: 1024px) {
+        display: none;
+      }
+
+      img {
+        display: block;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+
+    &__content {
+      width: 100%;
+      background-color: $color-light;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+      &__wrapper {
+        padding: 4rem;
+
+        p {
+          margin-bottom: 2rem;
+
+          &:last-child {
+            margin-bottom: unset;
+          }
+        }
+      }
+    }
+  }
+}

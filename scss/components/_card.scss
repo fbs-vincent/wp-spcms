@@ -1,0 +1,72 @@
+.card {
+  &__item {
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    &__img {
+      position: relative;
+      img {
+        width: 100%;
+        display: block;
+        max-height: 24rem;
+        object-fit: cover;
+      }
+
+      &__category {
+        position: absolute;
+        top: 1rem;
+        left: 0;
+        background-color: $color-primary;
+        color: $color-light;
+        padding: 0.5rem 1rem 0.5rem 2rem;
+      }
+    }
+    &__content {
+      background-color: $color-light;
+      padding: 2rem;
+
+      h3 {
+        color: $color-primary;
+        font-size: clamp(1.6rem, 5vw, 2rem);
+        line-height: clamp(1.6rem, 5vw, 2rem);
+        margin: 2rem 0 3rem 0;
+        font-family: "poppins-bold";
+        height: 4rem;
+        a {
+          color: $color-primary;
+          font-size: clamp(1.6rem, 5vw, 2rem);
+          line-height: clamp(1.6rem, 5vw, 2rem);
+          margin: 2rem 0 3rem 0;
+          font-family: "poppins-bold";
+          height: 4rem;
+        }
+      }
+
+      p {
+        margin-bottom: 3rem;
+        height: 5.1rem;
+      }
+
+      a {
+        font-family: "poppins-semibold";
+        color: $color-secondary;
+        display: flex;
+        align-items: center;
+
+        span {
+          display: flex;
+          margin-right: 1rem;
+          transition: 0.2s all ease-in-out;
+          svg {
+            width: 1.6rem;
+            height: 1.6rem;
+          }
+        }
+
+        &:hover {
+          span {
+            transform: translateX(0.5rem);
+          }
+        }
+      }
+    }
+  }
+}

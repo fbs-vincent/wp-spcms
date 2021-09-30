@@ -1,0 +1,40 @@
+.section-banner {
+  padding: 8vh 0;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  // background-image: linear-gradient(
+  //   to right,
+  //   rgba(216, 156, 53, 0.85),
+  //   rgba(0, 102, 0, 0.85)
+  // ) !important;
+  // background-blend-mode: screen !important;
+
+  &--about {
+    background: url('../../dist/assets/img/banner-about.jpg');
+  }
+
+  &--news {
+    background: url('../../dist/assets/img/banner-news.jpg');
+  }
+
+  &--activities {
+    background: url('../../dist/assets/img/banner-activities.jpg');
+  }
+
+  &--gallery {
+    background: url('../../dist/assets/img/banner-gallery.jpg');
+  }
+
+  &--contact {
+    background: url('../../dist/assets/img/banner-contact.jpg');
+  }
+
+  h1 {
+    color: $color-light;
+    line-height: clamp(2.2rem, 8vw, 5rem);
+    font-size: clamp(2.2rem, 8vw, 4rem);
+    font-family: 'poppins-bold';
+  }
+}

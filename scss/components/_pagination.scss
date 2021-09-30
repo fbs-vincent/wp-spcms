@@ -1,0 +1,10 @@
+.pagination {
+  text-align: right;
+  margin: 2rem 0;
+  a {
+    padding: 0.5rem 1rem;
+    background-color: $color-text;
+    display: inline-block;
+    color: $color-light;
+  }
+}

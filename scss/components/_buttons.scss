@@ -1,0 +1,18 @@
+.btn {
+  padding: 1rem 4rem;
+  color: $color-light;
+  border-radius: 2.5rem;
+  font-family: 'poppins-regular' !important;
+  transition: 0.1s all ease-in-out;
+  &--primary {
+    background-color: $color-primary;
+  }
+
+  &--secondary {
+    background-color: $color-secondary;
+
+    &:hover {
+      background-color: #c78f2e;
+    }
+  }
+}

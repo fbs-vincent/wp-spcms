@@ -1,0 +1,85 @@
+.banner {
+  padding: 8vh 0;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+
+    @media only screen and (max-width: 1024px) {
+      display: unset;
+      text-align: center;
+    }
+    &__content {
+      width: 100%;
+
+      h1 {
+        line-height: clamp(5rem, 10vw, 7rem);
+        font-size: clamp(4rem, 10vw, 6rem);
+        color: $color-primary;
+        margin-bottom: 6rem;
+        font-family: 'poppins-bold';
+      }
+
+      span {
+        font-size: clamp(1.6rem, 5vw, 2.2rem);
+        line-height: clamp(1.6rem, 5vw, 2.2rem);
+        font-family: 'poppins-bold';
+      }
+
+      p {
+        margin-bottom: 4rem;
+        font-family: 'poppins-bold';
+        @media only screen and (max-width: 1024px) {
+          text-align: left;
+        }
+      }
+
+      a {
+        margin-bottom: 6rem;
+        display: inline-block;
+      }
+    }
+    &__img {
+      width: 100%;
+      img {
+        display: block;
+        width: 100%;
+      }
+    }
+  }
+}
+
+.about {
+  padding: 8vh 0;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+
+    @media only screen and (max-width: 768px) {
+      flex-direction: column-reverse;
+    }
+
+    &__img {
+      width: 100%;
+      margin-top: 3.6rem;
+      @media only screen and (max-width: 768px) {
+        margin-bottom: 5rem;
+      }
+
+      img {
+        width: 100%;
+        display: block;
+      }
+    }
+
+    &__content {
+      width: 100%;
+    }
+  }
+}
+
+.latest {
+  padding: 8vh 0;
+  background: $color-gray;
+}

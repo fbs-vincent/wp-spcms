@@ -1,0 +1,15 @@
+.metadata {
+  height: 4.2rem;
+  li {
+    list-style-type: none;
+    color: $color-text;
+    display: inline-block;
+    font-family: 'poppins-bold';
+
+    &:first-child {
+      a {
+        color: $color-secondary;
+      }
+    }
+  }
+}

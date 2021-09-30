@@ -1,0 +1,66 @@
+.d-block {
+  display: block !important;
+}
+
+.color-secondary {
+  color: $color-secondary;
+}
+
+.menu-active {
+  color: $color-secondary;
+}
+
+.color-light {
+  color: $color-light;
+}
+
+.burger-close {
+  span {
+    background-color: $color-light !important;
+
+    &::before {
+      transition: 0.5s ease;
+      transform: translate(0, 1rem) rotate(45deg);
+      background-color: $color-secondary !important;
+    }
+
+    &::after {
+      transition: 0.5s ease;
+      transform: translate(0, -1rem) rotate(-45deg);
+      background-color: $color-secondary !important;
+    }
+  }
+}
+
+.menu-open {
+  transform: translateY(0) !important;
+  opacity: 1 !important;
+  pointer-events: unset !important;
+}
+
+.current-menu-item {
+  color: $color-secondary !important;
+}
+
+.current {
+  background-color: $color-secondary !important;
+  padding: 0.5rem 1rem;
+  color: $color-light;
+  display: inline-block;
+}
+
+.post-categories {
+  li {
+    list-style-type: none;
+    color: $color-secondary;
+
+    a {
+      font-family: 'poppins-bold';
+      color: $color-light;
+    }
+
+    @media only screen and (max-width: 414px) {
+      text-align: center;
+    }
+  }
+}

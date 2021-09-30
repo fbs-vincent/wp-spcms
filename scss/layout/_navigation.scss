@@ -1,0 +1,154 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  // margin: 2rem 0;
+  position: relative;
+  max-width: 1170px;
+  width: 90%;
+  margin: 2rem auto;
+
+  @media only screen and (max-width: 1100px) {
+    width: 100%;
+  }
+
+  .logo {
+    @media only screen and (max-width: 1100px) {
+      margin-left: 2rem;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+
+      @media only screen and (max-width: 1100px) {
+        width: 20rem;
+      }
+    }
+  }
+
+  .burger-menu {
+    display: none;
+    cursor: pointer;
+    padding: 1.2rem 0.1rem;
+    span {
+      height: 0.2rem;
+      background-color: $color-secondary;
+      display: block;
+      width: 3rem;
+      position: relative;
+
+      &::before {
+        height: inherit;
+        background-color: inherit;
+        width: inherit;
+        content: "";
+        position: absolute;
+        top: -1rem;
+      }
+
+      &::after {
+        height: inherit;
+        background-color: inherit;
+        width: inherit;
+        content: "";
+        position: absolute;
+        top: 1rem;
+      }
+    }
+    @media only screen and (max-width: 1100px) {
+      display: inline-block;
+    }
+    @media only screen and (max-width: 1100px) {
+      margin-right: 2rem;
+    }
+  }
+
+  .menu-top-bar-container {
+    z-index: 9999;
+    ul li {
+      list-style-type: none;
+      display: inline-block;
+      margin-right: 2rem;
+      color: $color-text;
+      transition: 0.1s all ease-in-out;
+
+      a {
+        font-family: "poppins-bold";
+        display: inline-block;
+      }
+
+      &:last-child {
+        margin-right: unset;
+      }
+
+      &:hover {
+        color: $color-secondary;
+      }
+    }
+
+    .cta a {
+      background-color: $color-secondary;
+      padding: 1rem 4rem;
+      border-radius: 2.5rem;
+      font-family: "poppins-regular" !important;
+      transition: 0.1s all ease-in-out !important;
+      color: $color-light !important;
+
+      &:hover {
+        background-color: #c78f2e;
+      }
+    }
+    @media only screen and (max-width: 1100px) {
+      position: absolute;
+      width: 100%;
+      top: 8rem;
+      left: 0;
+      background-color: #999;
+      // padding: 2rem 0;
+      opacity: 0;
+      pointer-events: none;
+      transition: 0.5s ease;
+      transform: translateY(-2rem);
+
+      ul li {
+        display: block;
+        text-align: center;
+        margin-right: unset;
+        // margin-bottom: 2rem;
+        color: $color-light;
+        // border-bottom: 0.05rem solid $color-light;
+
+        &:hover {
+          color: $color-secondary;
+        }
+
+        &:last-child {
+          // margin-bottom: 1rem;
+
+          a {
+            &:last-child {
+              // padding-bottom: 1rem;
+              // width: 90%;
+              // margin: 0 auto;
+              border-radius: 0;
+            }
+          }
+        }
+
+        a {
+          display: block;
+          padding: 1rem 0;
+
+          &:first-child {
+            padding-top: 1rem;
+          }
+        }
+      }
+    }
+
+    @media only screen and (max-width: 1100px) {
+      top: 5.7rem;
+    }
+  }
+}

@@ -1,0 +1,55 @@
+.member {
+  padding: 8vh 0;
+  text-align: center;
+  background-color: $color-gray;
+
+  &__wrapper {
+    p {
+      margin-bottom: 4rem;
+      width: 60%;
+      margin: 0 auto;
+      margin-bottom: 4rem;
+
+      @media only screen and (max-width: 768px) {
+        width: 100%;
+      }
+    }
+
+    a {
+      display: inline-block;
+      margin-right: 2rem;
+
+      &:last-child {
+        margin-right: unset;
+      }
+
+      @media only screen and (max-width: 419px) {
+        margin-right: unset;
+        margin-bottom: 2rem;
+        display: block;
+      }
+    }
+
+    h2 {
+      color: $color-primary;
+      line-height: clamp(2.2rem, 8vw, 5rem);
+      font-size: clamp(2.2rem, 8vw, 4rem);
+      font-family: 'poppins-bold';
+      margin-bottom: 4rem;
+      @media only screen and (max-width: 414px) {
+        text-align: center;
+      }
+      span {
+        display: block;
+        text-transform: none;
+        color: $color-secondary;
+        font-size: clamp(1.6rem, 5vw, 2.2rem);
+        line-height: clamp(1.6rem, 5vw, 2.2rem);
+        font-family: 'poppins-regular';
+        @media only screen and (max-width: 414px) {
+          text-align: center;
+        }
+      }
+    }
+  }
+}

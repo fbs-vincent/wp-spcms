@@ -1,0 +1,99 @@
+.footer {
+  padding: 8vh 0;
+  background-color: $color-primary;
+  color: $color-light;
+
+  p {
+    text-align: center;
+    color: #cbcbcb;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+  }
+
+  &__wrapper {
+    &__details {
+      &__logo {
+        margin-bottom: 4rem;
+        img {
+          display: block;
+
+          @media only screen and (max-width: 414px) {
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    &__quicklinks {
+      font-family: 'poppins-semibold';
+
+      h4 {
+        border-bottom: 1px solid $color-secondary;
+        display: inline-block;
+        font-size: clamp(1.6rem, 5vw, 1.8rem);
+        line-height: clamp(1.6rem, 5vw, 1.8rem);
+        padding-bottom: 0.5rem;
+        margin-bottom: 2rem;
+      }
+
+      ul li {
+        display: block;
+        color: $color-secondary;
+        margin-bottom: 2rem;
+
+        &:last-child {
+          margin-bottom: unset;
+        }
+      }
+    }
+
+    &__queries {
+      font-family: 'poppins-semibold';
+      margin-bottom: 6rem;
+      h4 {
+        border-bottom: 1px solid $color-secondary;
+        display: inline-block;
+        font-size: clamp(1.6rem, 5vw, 1.8rem);
+        line-height: clamp(1.6rem, 5vw, 1.8rem);
+        padding-bottom: 0.5rem;
+        margin-bottom: 2rem;
+      }
+
+      ul li {
+        margin-bottom: 2rem;
+        list-style-type: none;
+
+        p {
+          display: block;
+          color: $color-light;
+          margin-bottom: 0.5rem;
+          text-align: left;
+
+          &:last-child {
+            margin-bottom: unset;
+          }
+        }
+
+        a {
+          display: flex;
+          align-items: center;
+          color: $color-secondary;
+          font-family: 'poppins-light';
+
+          svg {
+            width: 2rem;
+            height: 2rem;
+            display: inline-block;
+            color: $color-light;
+            margin-right: 1rem;
+          }
+        }
+
+        &:last-child {
+          margin-bottom: unset;
+        }
+      }
+    }
+  }
+}
