@@ -4,72 +4,39 @@
         <div id="splides">
           <div class="splide__track">
             <ul class="splide__list">
+             <?php
+             $args = array('post_type' => 'banner');
+             $slider = new WP_Query($args);
+             ?>
+             <?php if($slider->have_posts()) : while($slider->have_posts()) : $slider->the_post() ?>
+             
               <li class="splide__slide">
                 <div class="grid-col-2 banner-slider__wrapper">
                   <div class="banner-slider__wrapper__content section-title">
-                    <h2>This is a post</h2>
+                    <h2><?php the_title(); ?></h2>
                     <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Quam earum velit cum quo neque labore perspiciatis dolore
-                      aut laboriosam optio minus, eligendi aspernatur ad
-                      accusantium ipsum eveniet dignissimos veritatis
-                      blanditiis?
+                    <?php echo wp_trim_words(get_the_content(), 10); ?>
                     </p>
                     <a
-                      href="https://demo.frontlinebusiness.com.ph/dev/spcms/dist/single.html"
+                      href="<?php the_permalink(); ?>"
                       class="btn btn--secondary"
                       >Read More</a
                     >
                   </div>
                   <div class="banner-slider__wrapper__img">
-                    <img src="https://spcms.frontlinebusiness.com.ph/wp-content/uploads/2021/09/banner-img-1.jpg" alt="" />
+                  <?php if(has_post_thumbnail()) {
+                  the_post_thumbnail();
+              }
+              ?>
                   </div>
                 </div>
               </li>
-              <li class="splide__slide">
-                <div class="grid-col-2 banner-slider__wrapper">
-                  <div class="banner-slider__wrapper__content section-title">
-                    <h2>This is a post</h2>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Quam earum velit cum quo neque labore perspiciatis dolore
-                      aut laboriosam optio minus, eligendi aspernatur ad
-                      accusantium ipsum eveniet dignissimos veritatis
-                      blanditiis?
-                    </p>
-                    <a
-                      href="https://demo.frontlinebusiness.com.ph/dev/spcms/dist/single.html"
-                      class="btn btn--secondary"
-                      >Read More</a
-                    >
-                  </div>
-                  <div class="banner-slider__wrapper__img">
-                    <img src="https://spcms.frontlinebusiness.com.ph/wp-content/uploads/2021/09/banner-img-1.jpg" alt="" />
-                  </div>
-                </div>
-              </li>
-              <li class="splide__slide">
-                <div class="grid-col-2 banner-slider__wrapper">
-                  <div class="banner-slider__wrapper__content section-title">
-                    <h2>This is a post</h2>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Quam earum velit cum quo neque labore perspiciatis dolore
-                      aut laboriosam optio minus, eligendi aspernatur ad
-                      accusantium ipsum eveniet dignissimos veritatis
-                      blanditiis?
-                    </p>
-                    <a
-                      href="https://demo.frontlinebusiness.com.ph/dev/spcms/dist/single.html"
-                      class="btn btn--secondary"
-                      >Read More</a
-                    >
-                  </div>
-                  <div class="banner-slider__wrapper__img">
-                    <img src="https://spcms.frontlinebusiness.com.ph/wp-content/uploads/2021/09/banner-img-1.jpg" alt="" />
-                  </div>
-                </div>
-              </li>
+              <?php endwhile;
+            else :
+                echo "no more posts";
+            endif;
+            ?>
+          
             </ul>
           </div>
         </div>
@@ -118,7 +85,7 @@
         
         <div class="grid-col-3 card">
         <?php 
-              $paged =(get_query_var('paged')) ? get_query_var('paged') : 1;
+              $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
               $latest = new WP_Query(array(
                 'post_type' => 'post',
                 'posts_per_page' => 3,

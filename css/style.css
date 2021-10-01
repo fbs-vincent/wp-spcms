@@ -47,7 +47,7 @@
   color: #d89c35;
 }
 .post-categories li a {
-  font-family: 'poppins-bold';
+  font-family: "poppins-bold";
   color: #fff;
 }
 @media only screen and (max-width: 414px) {
@@ -61,13 +61,15 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   font-size: 1.4rem;
-  font-family: 'poppins-regular', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "poppins-regular", sans-serif;
   text-rendering: inherit;
+}
+body {
+  font-family: "poppins-regular", sans-serif;
 }
 html {
   font-size: 62.5%;
   text-rendering: optimizeSpeed;
-  scroll-behavior: smooth;
 }
 p {
   word-break: break-all;
@@ -81,34 +83,39 @@ ul li {
   word-break: break-all;
 }
 @font-face {
-  font-family: 'poppins-extralight';
-  src: url('../font/Poppins-ExtraLight.woff2') format('woff2');
+  font-family: "poppins-extralight";
+  src: url("../font/Poppins-ExtraLight.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
-  font-family: 'poppins-light';
-  src: url('../font/Poppins-Light.woff2') format('woff2');
+  font-family: "poppins-light";
+  src: url("../font/Poppins-Light.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
-  font-family: 'poppins-regular';
-  src: url('../font/Poppins-Regular.woff2') format('woff2');
+  font-family: "poppins-regular";
+  src: url("../font/Poppins-Regular.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
-  font-family: 'poppins-semibold';
-  src: url('../font/Poppins-SemiBold.woff2') format('woff2');
+  font-family: "poppins-semibold";
+  src: url("../font/Poppins-SemiBold.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
-  font-family: 'poppins-bold';
-  src: url('../font/Poppins-Bold.woff2') format('woff2');
+  font-family: "poppins-bold";
+  src: url("../font/Poppins-Bold.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 .about-card {
   width: 100%;
@@ -130,7 +137,7 @@ ul li {
   padding: 1rem 4rem;
   color: #fff;
   border-radius: 2.5rem;
-  font-family: 'poppins-regular' !important;
+  font-family: "poppins-regular" !important;
   -webkit-transition: 0.1s all ease-in-out;
   transition: 0.1s all ease-in-out;
 }
@@ -169,12 +176,20 @@ ul li {
   background-color: #fff;
   padding: 2rem;
 }
+.card__item__content h3 {
+  color: #060;
+  font-size: clamp(1.6rem, 5vw, 2rem);
+  line-height: clamp(1.6rem, 5vw, 2rem);
+  margin: 2rem 0 3rem 0;
+  font-family: "poppins-bold";
+  height: 4rem;
+}
 .card__item__content h3 a {
   color: #060;
   font-size: clamp(1.6rem, 5vw, 2rem);
   line-height: clamp(1.6rem, 5vw, 2rem);
   margin: 2rem 0 3rem 0;
-  font-family: 'poppins-bold';
+  font-family: "poppins-bold";
   height: 4rem;
 }
 .card__item__content p {
@@ -182,7 +197,7 @@ ul li {
   height: 5.1rem;
 }
 .card__item__content a {
-  font-family: 'poppins-semibold';
+  font-family: "poppins-semibold";
   color: #d89c35;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -224,7 +239,7 @@ ul li {
 .contact-details ul li:last-child a {
   display: inline-block;
   color: #d89c35;
-  font-family: 'poppins-light';
+  font-family: "poppins-light";
 }
 .contact-details ul li svg {
   width: 2rem;
@@ -244,7 +259,7 @@ ul li {
   color: #d89c35;
   font-size: clamp(1.6rem, 5vw, 2.2rem);
   line-height: clamp(1.6rem, 5vw, 2.2rem);
-  font-family: 'poppins-bold';
+  font-family: "poppins-bold";
 }
 @media only screen and (max-width: 414px) {
   .section-title span {
@@ -255,7 +270,7 @@ ul li {
   color: #060;
   line-height: clamp(2.2rem, 8vw, 5rem);
   font-size: clamp(2.2rem, 8vw, 4rem);
-  font-family: 'poppins-bold';
+  font-family: "poppins-bold";
   margin-bottom: 4rem;
 }
 @media only screen and (max-width: 414px) {
@@ -304,7 +319,7 @@ ul li {
   color: #060;
   line-height: clamp(2.2rem, 8vw, 5rem);
   font-size: clamp(2.2rem, 8vw, 4rem);
-  font-family: 'poppins-bold';
+  font-family: "poppins-bold";
   margin-bottom: 4rem;
 }
 @media only screen and (max-width: 414px) {
@@ -318,7 +333,7 @@ ul li {
   color: #d89c35;
   font-size: clamp(1.6rem, 5vw, 2.2rem);
   line-height: clamp(1.6rem, 5vw, 2.2rem);
-  font-family: 'poppins-regular';
+  font-family: "poppins-regular";
 }
 @media only screen and (max-width: 414px) {
   .member__wrapper h2 span {
@@ -332,7 +347,7 @@ ul li {
   list-style-type: none;
   color: #707070;
   display: inline-block;
-  font-family: 'poppins-bold';
+  font-family: "poppins-bold";
 }
 .metadata li:first-child a {
   color: #d89c35;
@@ -355,25 +370,25 @@ ul li {
   background-repeat: no-repeat;
 }
 .section-banner--about {
-  background: url('../../dist/assets/img/banner-about.jpg');
+  background-image: url("../../dist/assets/img/banner-about.jpg");
 }
 .section-banner--news {
-  background: url('../../dist/assets/img/banner-news.jpg');
+  background-image: url("../../dist/assets/img/banner-news.jpg");
 }
 .section-banner--activities {
-  background: url('../../dist/assets/img/banner-activities.jpg');
+  background-image: url("../../dist/assets/img/banner-activities.jpg");
 }
 .section-banner--gallery {
-  background: url('../../dist/assets/img/banner-gallery.jpg');
+  background-image: url("../../dist/assets/img/banner-gallery.jpg");
 }
 .section-banner--contact {
-  background: url('../../dist/assets/img/banner-contact.jpg');
+  background-image: url("../../dist/assets/img/banner-contact.jpg");
 }
 .section-banner h1 {
   color: #fff;
   line-height: clamp(2.2rem, 8vw, 5rem);
   font-size: clamp(2.2rem, 8vw, 4rem);
-  font-family: 'poppins-bold';
+  font-family: "poppins-bold";
 }
 .social-links {
   margin-top: 4rem;
@@ -415,13 +430,13 @@ ul li {
       from(rgba(216, 156, 53, 0.85)),
       to(rgba(0, 102, 0, 0.85))
     ),
-    url('../../dist/assets/img/slider-img-2.jpg');
+    url("https://spcms.frontlinebusiness.com.ph/wp-content/uploads/2021/09/slider-img-2-1.jpg");
   background-image: linear-gradient(
       to left,
       rgba(216, 156, 53, 0.85),
       rgba(0, 102, 0, 0.85)
     ),
-    url('https://spcms.frontlinebusiness.com.ph/wp-content/uploads/2021/09/slider-img-2-1.jpg');
+    url("https://spcms.frontlinebusiness.com.ph/wp-content/uploads/2021/09/slider-img-2-1.jpg");
   mix-blend-mode: screen;
 }
 .banner-slider ul li {
@@ -440,6 +455,7 @@ ul li {
 .banner-slider__wrapper__img img {
   width: 35rem;
   margin: 0 auto;
+  height: auto;
 }
 @media only screen and (max-width: 768px) {
   .banner-slider__wrapper__img img {
@@ -503,7 +519,7 @@ ul li {
   }
 }
 .footer__wrapper__quicklinks {
-  font-family: 'poppins-semibold';
+  font-family: "poppins-semibold";
 }
 .footer__wrapper__quicklinks h4 {
   border-bottom: 1px solid #d89c35;
@@ -522,7 +538,7 @@ ul li {
   margin-bottom: unset;
 }
 .footer__wrapper__queries {
-  font-family: 'poppins-semibold';
+  font-family: "poppins-semibold";
   margin-bottom: 6rem;
 }
 .footer__wrapper__queries h4 {
@@ -554,7 +570,7 @@ ul li {
   -ms-flex-align: center;
   align-items: center;
   color: #d89c35;
-  font-family: 'poppins-light';
+  font-family: "poppins-light";
 }
 .footer__wrapper__queries ul li a svg {
   width: 2rem;
@@ -695,7 +711,7 @@ ul li {
   height: inherit;
   background-color: inherit;
   width: inherit;
-  content: '';
+  content: "";
   position: absolute;
   top: -1rem;
 }
@@ -703,7 +719,7 @@ ul li {
   height: inherit;
   background-color: inherit;
   width: inherit;
-  content: '';
+  content: "";
   position: absolute;
   top: 1rem;
 }
@@ -729,7 +745,7 @@ ul li {
   transition: 0.1s all ease-in-out;
 }
 .navigation .menu-top-bar-container ul li a {
-  font-family: 'poppins-bold';
+  font-family: "poppins-bold";
   display: inline-block;
 }
 .navigation .menu-top-bar-container ul li:last-child {
@@ -742,7 +758,7 @@ ul li {
   background-color: #d89c35;
   padding: 1rem 4rem;
   border-radius: 2.5rem;
-  font-family: 'poppins-regular' !important;
+  font-family: "poppins-regular" !important;
   -webkit-transition: 0.1s all ease-in-out !important;
   transition: 0.1s all ease-in-out !important;
   color: #fff !important;
@@ -757,7 +773,6 @@ ul li {
     top: 8rem;
     left: 0;
     background-color: #999;
-    padding: 2rem 0;
     opacity: 0;
     pointer-events: none;
     -webkit-transition: 0.5s ease;
@@ -769,14 +784,20 @@ ul li {
     display: block;
     text-align: center;
     margin-right: unset;
-    margin-bottom: 2rem;
     color: #fff;
   }
   .navigation .menu-top-bar-container ul li:hover {
     color: #d89c35;
   }
-  .navigation .menu-top-bar-container ul li:last-child {
-    margin-bottom: unset;
+  .navigation .menu-top-bar-container ul li:last-child a:last-child {
+    border-radius: 0;
+  }
+  .navigation .menu-top-bar-container ul li a {
+    display: block;
+    padding: 1rem 0;
+  }
+  .navigation .menu-top-bar-container ul li a:first-child {
+    padding-top: 1rem;
   }
 }
 @media only screen and (max-width: 1100px) {
@@ -870,7 +891,7 @@ ul li {
 .talk {
   text-align: center;
   padding: 10rem 0;
-  background: url('https://spcms.frontlinebusiness.com.ph/wp-content/uploads/2021/09/talk-img.jpg');
+  background: url("https://spcms.frontlinebusiness.com.ph/wp-content/uploads/2021/09/talk-img.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -878,7 +899,7 @@ ul li {
 .talk h2 {
   line-height: clamp(2.2rem, 8vw, 5rem);
   font-size: clamp(2.2rem, 8vw, 4rem);
-  font-family: 'poppins-bold';
+  font-family: "poppins-bold";
   color: #fff;
   margin-bottom: 4rem;
 }
@@ -1031,13 +1052,14 @@ ul li {
   width: 100%;
 }
 .contact__wrapper__form__form-wrapper__wrapper label {
-  margin-bottom: 0.5;
+  margin-bottom: 0.5rem;
   color: #707070;
 }
 .contact__wrapper__form__form-wrapper__wrapper input {
   padding: 0.5rem;
   background-color: rgba(0, 102, 0, 0.13);
   border: none;
+  border-radius: 2.5rem;
 }
 .contact__wrapper__form__form-wrapper__wrapper textarea {
   width: 100%;
@@ -1045,6 +1067,7 @@ ul li {
   border: none;
   background-color: rgba(0, 102, 0, 0.13);
   padding: 0.5rem;
+  border-radius: 2.5rem;
 }
 .contact__wrapper__form__form-wrapper a {
   display: block;
@@ -1089,7 +1112,7 @@ ul li {
 }
 .directory__wrapper__member__profile h4 {
   color: #060;
-  font-family: 'poppins-bold';
+  font-family: "poppins-bold";
   font-size: 1.8rem;
   line-height: 1.8rem;
   margin-top: 1rem;
@@ -1158,16 +1181,16 @@ ul li {
   font-size: clamp(4rem, 10vw, 6rem);
   color: #060;
   margin-bottom: 6rem;
-  font-family: 'poppins-bold';
+  font-family: "poppins-bold";
 }
 .banner__wrapper__content span {
   font-size: clamp(1.6rem, 5vw, 2.2rem);
   line-height: clamp(1.6rem, 5vw, 2.2rem);
-  font-family: 'poppins-bold';
+  font-family: "poppins-bold";
 }
 .banner__wrapper__content p {
   margin-bottom: 4rem;
-  font-family: 'poppins-bold';
+  font-family: "poppins-bold";
 }
 @media only screen and (max-width: 1024px) {
   .banner__wrapper__content p {
@@ -1247,7 +1270,7 @@ ul li {
   list-style-type: none;
 }
 .single__wrapper__metadata ul li:first-child {
-  font-family: 'poppins-bold';
+  font-family: "poppins-bold";
   color: #060;
 }
 .single__wrapper__metadata ul:last-child {
@@ -1273,7 +1296,7 @@ ul li {
   color: #d89c35;
 }
 .single__wrapper__body__header .post-categories li a {
-  font-family: 'poppins-bold';
+  font-family: "poppins-bold";
 }
 @media only screen and (max-width: 414px) {
   .single__wrapper__body__header .post-categories li {
@@ -1286,3 +1309,4 @@ ul li {
 .single__wrapper__body__content p:last-child {
   margin-bottom: unset;
 }
+/*# sourceMappingURL=main.min.css.map */

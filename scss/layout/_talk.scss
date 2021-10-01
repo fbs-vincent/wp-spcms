@@ -2,7 +2,7 @@
   text-align: center;
   padding: 10rem 0;
 
-  background: url('../../dist/assets/img/talk-img.jpg');
+  background: url("https://spcms.frontlinebusiness.com.ph/wp-content/uploads/2021/09/talk-img.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -10,7 +10,7 @@
   h2 {
     line-height: clamp(2.2rem, 8vw, 5rem);
     font-size: clamp(2.2rem, 8vw, 4rem);
-    font-family: 'poppins-bold';
+    font-family: "poppins-bold";
     color: $color-light;
     margin-bottom: 4rem;
   }
