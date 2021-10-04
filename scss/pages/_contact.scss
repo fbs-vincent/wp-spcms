@@ -19,7 +19,7 @@
           }
 
           input {
-            padding: 0.5rem;
+            padding: 1rem;
             background-color: rgba(0, 102, 0, 0.13);
             border: none;
             border-radius: 2.5rem;
@@ -30,7 +30,7 @@
             resize: none;
             border: none;
             background-color: rgba(0, 102, 0, 0.13);
-            padding: 0.5rem;
+            padding: 1rem;
             border-radius: 2.5rem;
           }
         }
@@ -39,6 +39,27 @@
           display: block;
           text-transform: uppercase;
           text-align: center;
+        }
+
+        p {
+          position: relative;
+
+          input {
+            &[type="submit"] {
+              width: 100% !important;
+              display: block !important;
+              border: none !important;
+              outline: none !important;
+              cursor: pointer !important;
+            }
+          }
+
+          span {
+            position: absolute !important;
+            top: 0.9rem !important;
+            right: 0.9rem !important;
+            margin: 0 !important;
+          }
         }
       }
     }
