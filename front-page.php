@@ -84,16 +84,17 @@
         </div>
         
         <div class="grid-col-3 card">
-        <?php 
-              $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-              $latest = new WP_Query(array(
-                'post_type' => 'post',
-                'posts_per_page' => 3,
-                'meta_key' => 'Group',
-                'meta_value' => 'Latest',
-                'paged' => $paged
-              ))
-            ?>
+      
+
+<?php $latest = new WP_Query( array(
+                     'post_type' => 'post',
+                     'posts_per_page' => 3, // it will show 3 items only
+                     'meta_key' => 'Group',
+                     'meta_value' => 'Latest',
+                     'paged' =>  ( get_query_var('paged') ? get_query_var('paged') : 1)
+                ));
+                ?>
+
               <?php if($latest->have_posts()) : while($latest->have_posts()) : $latest->the_post() ?>
           <div class="card__item">
             <div class="card__item__img">
@@ -146,17 +147,19 @@
           
         </div>
         <div class="pagination">
-        <?php
-              echo paginate_links(array(
-                'base' => str_replace(999999999, '%#%', esc_url(get_pagenum_link(999999999))),
-                'total' => $latest->max_num_pages,
-                'current' => max(1, get_query_var('paged')),
-                'prev_next' => true,
-                'prev_text' => sprintf('Prev'),
-                'next_text' => sprintf('Next'),
-              ))
-            ?>
-       </div>
+    <?php
+                    $big = 999999999; // need an unlikely integer
+                    echo paginate_links( array(
+                        'base' => str_replace( $big, '%#%', get_pagenum_link( $big ) ),
+                        'format' => '?paged=%#%',
+                        'prev_text' => __('Prev'),
+                        'next_text' => __('Next '),
+                        'current' => max( 1, get_query_var('paged') ),
+                        'total' => $latest->max_num_pages
+                        ));
+                   ?>
+            </div>
+
       </div>
     </section>
     <?php  if(is_front_page()) 
