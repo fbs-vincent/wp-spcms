@@ -2,18 +2,28 @@
 
 function banner_slider()
 {
+
+    $labels  = array (
+        // Change the label of the cpt
+'name'          => __('Banner Sliders', 'textdomain'), 
+'singular_name' => __('Banner Slider', 'textdomain'),
+'add_new'       => __('Add New Banner Slider', 'textdomain'),
+'add_new_item'  => __('Add New Banner Slider', 'textdomain'),
+'edit_item'     => __('Edit Banner Slider', 'textdomain'),
+'all_items'     => __('All Banner Sliders', 'textdomain')
+    );
     $args = array(
         
-        'labels' => array(
-            'name' => 'Banner Sliders',
-            'singular_name' => 'Banner Slider',
-        ),
+        'labels' => $labels,
         'hierarchical' => true,
         'public' => true,
         'has_archive' => true,
         'menu_icon' => 'dashicons-slides', 
         'supports' => array('title', 'editor', 'thumbnail'),
         'rewrite' => array('slug' => 'announcements'),
+        'show_in_menu'=> true,
+    'capability_type'  => 'post',
+    'taxonomies'=> array( 'category' ), // if you need category 
 
 
     );

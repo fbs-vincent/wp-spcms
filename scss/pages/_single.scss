@@ -15,7 +15,7 @@
           list-style-type: none;
 
           &:first-child {
-            font-family: 'poppins-bold';
+            font-family: "poppins-bold";
             color: $color-primary;
           }
         }
@@ -38,10 +38,10 @@
         .post-categories {
           li {
             list-style-type: none;
-            color: $color-secondary;
 
             a {
-              font-family: 'poppins-bold';
+              font-family: "poppins-bold";
+              color: $color-secondary !important;
             }
 
             @media only screen and (max-width: 414px) {
@@ -52,12 +52,24 @@
       }
 
       &__content {
-        p {
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        ul,
+        ol,
+        div,
+        img {
           margin-bottom: 2rem;
+          word-break: break-all;
+        }
 
-          &:last-child {
-            margin-bottom: unset;
-          }
+        ol,
+        ul {
+          list-style-position: inside;
         }
       }
     }

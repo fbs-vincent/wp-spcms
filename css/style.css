@@ -370,7 +370,7 @@ ul li {
   background-repeat: no-repeat;
 }
 .section-banner--about {
-  background-image: url("../../dist/assets/img/banner-about.jpg");
+  background-image: url("https://spcms.frontlinebusiness.com.ph/wp-content/uploads/2021/09/banner-about.jpg");
 }
 .section-banner--news {
   background-image: url("../../dist/assets/img/banner-news.jpg");
@@ -1309,20 +1309,32 @@ ul li {
 }
 .single__wrapper__body__header .post-categories li {
   list-style-type: none;
-  color: #d89c35;
 }
 .single__wrapper__body__header .post-categories li a {
   font-family: "poppins-bold";
+  color: #d89c35 !important;
 }
 @media only screen and (max-width: 414px) {
   .single__wrapper__body__header .post-categories li {
     text-align: center;
   }
 }
-.single__wrapper__body__content p {
+.single__wrapper__body__content h1,
+.single__wrapper__body__content h2,
+.single__wrapper__body__content h3,
+.single__wrapper__body__content h4,
+.single__wrapper__body__content h5,
+.single__wrapper__body__content h6,
+.single__wrapper__body__content p,
+.single__wrapper__body__content ul,
+.single__wrapper__body__content ol,
+.single__wrapper__body__content div,
+.single__wrapper__body__content img {
   margin-bottom: 2rem;
+  word-break: break-all;
 }
-.single__wrapper__body__content p:last-child {
-  margin-bottom: unset;
+.single__wrapper__body__content ol,
+.single__wrapper__body__content ul {
+  list-style-position: inside;
 }
 /*# sourceMappingURL=main.min.css.map */
