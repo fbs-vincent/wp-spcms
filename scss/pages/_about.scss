@@ -12,6 +12,7 @@
 
     &__img {
       width: 100%;
+      position: relative;
       img {
         width: 100%;
         display: block;
@@ -19,6 +20,17 @@
 
       @media only screen and (max-width: 1024px) {
         margin-bottom: 2rem;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        background-color: $color-primary;
+        top: -10px;
+        left: -10px;
+        height: 100%;
+        width: inherit;
+        z-index: -1;
       }
     }
 

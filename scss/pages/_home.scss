@@ -17,18 +17,18 @@
         font-size: clamp(4rem, 10vw, 6rem);
         color: $color-primary;
         margin-bottom: 6rem;
-        font-family: 'poppins-bold';
+        font-family: "poppins-bold";
       }
 
       span {
         font-size: clamp(1.6rem, 5vw, 2.2rem);
         line-height: clamp(1.6rem, 5vw, 2.2rem);
-        font-family: 'poppins-bold';
+        font-family: "poppins-bold";
       }
 
       p {
         margin-bottom: 4rem;
-        font-family: 'poppins-bold';
+        font-family: "poppins-bold";
         @media only screen and (max-width: 1024px) {
           text-align: left;
         }
@@ -62,7 +62,8 @@
 
     &__img {
       width: 100%;
-      margin-top: 3.6rem;
+      // margin-top: 3.6rem;
+      position: relative;
       @media only screen and (max-width: 768px) {
         margin-bottom: 5rem;
       }
@@ -70,6 +71,17 @@
       img {
         width: 100%;
         display: block;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        background-color: $color-primary;
+        top: -10px;
+        left: -10px;
+        height: 100%;
+        width: inherit;
+        z-index: -1;
       }
     }
 
