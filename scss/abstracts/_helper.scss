@@ -32,6 +32,16 @@
   }
 }
 
+.view-all {
+  margin-top: 2rem;
+  text-align: right;
+  a {
+    color: $color-secondary;
+    display: inline-block;
+    text-decoration: underline;
+  }
+}
+
 .menu-open {
   transform: translateY(0) !important;
   opacity: 1 !important;
@@ -55,7 +65,7 @@
     color: $color-secondary;
 
     a {
-      font-family: 'poppins-bold';
+      font-family: "poppins-bold";
       color: $color-light;
     }
 

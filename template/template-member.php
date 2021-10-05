@@ -11,12 +11,12 @@
           </p>
           <a
             class="btn btn--secondary"
-            href="https://demo.frontlinebusiness.com.ph/dev/spcms/dist/contact.html"
+            href="https://spcms.frontlinebusiness.com.ph/contact/"
             >Join Us!!!</a
           >
           <a
             class="btn btn--secondary"
-            href="https://demo.frontlinebusiness.com.ph/dev/spcms/dist/directory.html"
+            href="https://spcms.frontlinebusiness.com.ph/directory/"
             >Members Directory</a
           >
         </div>

@@ -46,7 +46,7 @@
       <div class="container">
         <div class="grid-col-2 about__wrapper">
           <div class="about__wrapper__img">
-            <img src="https://spcms.frontlinebusiness.com.ph/wp-content/uploads/2021/09/about-img.jpg" alt="aboutimg" />
+            <img src="https://spcms.frontlinebusiness.com.ph/wp-content/uploads/2021/10/about-img.jpg" alt="aboutimg" />
           </div>
           <div class="about__wrapper__content section-title">
             <h2>
@@ -146,20 +146,10 @@
             ?>
           
         </div>
-        <div class="pagination">
-    <?php
-                    $big = 999999999; // need an unlikely integer
-                    echo paginate_links( array(
-                        'base' => str_replace( $big, '%#%', get_pagenum_link( $big ) ),
-                        'format' => '?paged=%#%',
-                        'prev_next' => true,
-                        'prev_text' => __('Prev'),
-                        'next_text' => __('Next '),
-                        'current' => max( 1, get_query_var('paged') ),
-                        'total' => $latest->max_num_pages
-                        ));
-                   ?>
-            </div>
+        <div class="view-all">
+        <a href="https://spcms.frontlinebusiness.com.ph/news/">View All</a>
+        </div>
+       
 
       </div>
     </section>

@@ -6,7 +6,7 @@
       <div class="container">
         <div class="grid-col-2 about-intro__wrapper">
           <div class="about-intro__wrapper__img">
-            <img src="https://spcms.frontlinebusiness.com.ph/wp-content/uploads/2021/09/about-intro-img.jpg" alt="" />
+            <img src="https://spcms.frontlinebusiness.com.ph/wp-content/uploads/2021/10/about-intro-img.jpg" alt="" />
           </div>
           <div class="about-intro__wrapper__content section-title">
             <h2>
