@@ -3,10 +3,16 @@
         <div class="section-title">
           <h2><span>Our</span>Partners</h2>
         </div>
+       
+        
+          <?php if(have_posts()) : while(have_posts()) : the_post() ?>
+       
+         
 
-        <ul>
-          <div class="grid-col-5">
-            <li>
+         
+          <?php the_content(); ?>
+         
+            <!-- <li>
               <img src="https://spcms.frontlinebusiness.com.ph/wp-content/uploads/2021/09/who.png" alt="" />
             </li>
 
@@ -24,8 +30,15 @@
 
             <li>
               <img src="https://spcms.frontlinebusiness.com.ph/wp-content/uploads/2021/09/pafp.png" alt="" />
-            </li>
-          </div>
-        </ul>
+            </li> -->
+           
+            <?php endwhile;
+    else :
+        echo "no more post";
+    endif;
+    ?>
+        
+      
+       
       </div>
     </section>
