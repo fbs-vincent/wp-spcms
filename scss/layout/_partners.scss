@@ -26,21 +26,6 @@
     // @media only screen and (max-width: 991px) {
     //   flex-direction: column;
     // }
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-gap: 3.6rem;
-
-    @media only screen and (max-width: 991px) {
-      grid-template-columns: 1fr 1fr 1fr;
-    }
-
-    @media only screen and (max-width: 768px) {
-      grid-template-columns: 1fr 1fr;
-    }
-
-    @media only screen and (max-width: 414px) {
-      grid-template-columns: 1fr;
-    }
 
     li {
       list-style-type: none;
