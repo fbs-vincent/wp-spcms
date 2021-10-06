@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<?php  if(is_page('news')) 
+<?php 
  require_once( get_template_directory() . '/template/template-pages-banner.php');
 ?>
 

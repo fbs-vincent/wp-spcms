@@ -67,6 +67,12 @@
           word-break: break-all;
         }
 
+        img {
+          width: 100%;
+          display: block;
+          height: auto;
+        }
+
         ol,
         ul {
           list-style-position: inside;

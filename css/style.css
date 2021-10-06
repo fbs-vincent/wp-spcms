@@ -169,7 +169,7 @@ ul li {
 .card__item__img img {
   width: 100%;
   display: block;
-  max-height: 24rem;
+  height: 24rem;
   -o-object-fit: cover;
   object-fit: cover;
 }
@@ -1387,6 +1387,11 @@ ul li {
 .single__wrapper__body__content img {
   margin-bottom: 2rem;
   word-break: break-all;
+}
+.single__wrapper__body__content img {
+  width: 100%;
+  display: block;
+  height: auto;
 }
 .single__wrapper__body__content ol,
 .single__wrapper__body__content ul {

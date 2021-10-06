@@ -1,15 +1,17 @@
 <?php get_header(); ?>
-<?php  if(is_page('activities')) 
+<?php 
  require_once( get_template_directory() . '/template/template-pages-banner.php');
 ?>
 <?php
 
-$activities = new WP_Query(
+$queryActivities = new WP_Query(
     array(
               'post_type' => 'activities', // name used when you register your cpt example "register_post_type( 'faqs', $args )" use "faqs". There are many options that you can add on the query - just read them
+              'posts_per_page' => 3, // it will show 3 items only
+              'paged' =>  ( get_query_var('paged') ? get_query_var('paged') : 1)
     ));
 ?>
-<?php if($activities->have_posts()) : while($activities->have_posts()) : $activities->the_post() ?>    
+
 <section class="news">
       <div class="container">
         <div class="section-description">
@@ -19,6 +21,7 @@ $activities = new WP_Query(
           </p>
         </div>
         <div class="grid-col-3 card">
+          <?php if($queryActivities->have_posts()) : while($queryActivities->have_posts()) : $queryActivities->the_post() ?>    
           <div class="card__item">
             <div class="card__item__img">
             <?php if(has_post_thumbnail()) {
@@ -62,22 +65,33 @@ $activities = new WP_Query(
               >
             </div>
           </div>
-        </div>
-        <div class="pagination">
-          <a href="#">Prev</a>
-          <a href="#">Next</a>
-        </div>
-      </div>
-    </section>
-    <?php endwhile;
+          <?php endwhile;
             else :
                 echo "no more posts";
             endif;
             ?>
-             <?php  if(is_page('activities')) 
+        </div>
+       
+                           <div class="pagination t-center">
+    <?php
+                    $big = 999999999; // need an unlikely integer
+                    echo paginate_links( array(
+                        'base' => str_replace( $big, '%#%', get_pagenum_link( $big ) ),
+                        'format' => '?paged=%#%',
+                        'prev_text' => __('Prev'),
+                        'next_text' => __('Next '),
+                        'current' => max( 1, get_query_var('paged') ),
+                        'total' => $queryActivities->max_num_pages
+                        ));
+                   ?>
+            </div>
+      </div>
+    </section>
+  
+             <?php  
  require_once( get_template_directory() . '/template/template-talk.php');
 ?>
- <?php  if(is_page('activities')) 
+ <?php 
  require_once( get_template_directory() . '/template/template-member.php');
 ?>
 <?php get_footer(); ?>

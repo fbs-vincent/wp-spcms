@@ -28,7 +28,7 @@
               scelerisque. Curabitur vitae tempor elit.
             </p>
             <a
-              href="https://demo.frontlinebusiness.com.ph/dev/spcms/dist/directory.html"
+              href="https://spcms.frontlinebusiness.com.ph/directory/"
               class="btn btn--secondary"
               >Members Directory</a
             >
