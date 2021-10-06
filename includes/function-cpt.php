@@ -73,6 +73,28 @@ function banner_slider() {
         register_post_type( 'activities', $argsActivity );
     
 
+    // 	GALLERY
+	$labelsGallery  = array (
+                            // Change the label of the cpt
+         'name'          => __('Galleries', 'textdomain'), 
+         'singular_name' => __('Gallery', 'textdomain'),
+         'add_new'       => __('Add Gallery', 'textdomain'),
+         'add_new_item'  => __('Add Gallery', 'textdomain'),
+         'edit_item'     => __('Edit Gallery', 'textdomain'),
+        'all_items'     => __('All Galleries', 'textdomain')
+                        );
+         
+        $argsGallery = array( 
+        'labels' => $labelsGallery,
+        'public'  => true,
+        'show_in_menu'=> true,
+        'capability_type'  => 'post',
+        'taxonomies'=> array( 'category',), 
+        'supports' => array( 'title', 'editor', 'thumbnail'),
+        'rewrite' => array( 'slug' => 'gallery' ),  
+        );
+        register_post_type( 'galleries', $argsGallery );
+
 }
 
 

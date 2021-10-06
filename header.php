@@ -16,9 +16,7 @@
       <div class="container-fluid">
         <nav class="navigation">
           <div class="logo">
-            <a href="<?php echo site_url('/') ?>">
-              <img src="https://spcms.frontlinebusiness.com.ph/wp-content/uploads/2021/09/logo-spcms.png" alt="spcmslogo"
-            /></a>
+            <?php the_custom_logo() ?>
           </div>
           <div class="burger-menu">
             <span></span>

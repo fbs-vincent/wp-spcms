@@ -72,8 +72,7 @@
             ?>
         </div>
 		 
-        <div class="pagination">
-                        <div class="pagination t-center">
+        <div class="pagination t-center">
     <?php
                     $big = 999999999; // need an unlikely integer
                     echo paginate_links( array(
@@ -86,7 +85,6 @@
                         ));
                    ?>
             </div>
-        </div>
       </div>
     </section>
 
