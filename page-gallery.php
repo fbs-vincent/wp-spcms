@@ -6,8 +6,8 @@
 
 $queryGalleries = new WP_Query(
     array(
-              'post_type' => 'galleries', // name used when you register your cpt example "register_post_type( 'faqs', $args )" use "faqs". There are many options that you can add on the query - just read them
-              'posts_per_page' => 3, // it will show 3 items only
+              'post_type' => 'galleries', 
+              'posts_per_page' => 3,
               'paged' =>  ( get_query_var('paged') ? get_query_var('paged') : 1)
     ));
 ?>
@@ -23,25 +23,15 @@ $queryGalleries = new WP_Query(
         <div class="grid-col-3 card">
         <?php if($queryGalleries->have_posts()) : while($queryGalleries->have_posts()) : $queryGalleries->the_post() ?>  
           <div class="card__item">
-            <div class="card__item__img">
-            <?php if(has_post_thumbnail()) {
-                  the_post_thumbnail();
-              }
-              ?>
-              <div class="card__item__img__category">
-                <span><?php the_category(); ?></span>
-              </div>
-            </div>
+          
             <div class="card__item__content">
+            <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
               <ul class="metadata">
               <li class="category"><?php the_category(); ?></li>
                 <li class="date">/ <?php echo get_the_date('M d Y'); ?> /</li>
                 <li class="author"><?php the_author(); ?></li>
               </ul>
-              <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-              <p>
-              <?php echo wp_trim_words(get_the_content(), 10) ?>
-              </p>
+				      <?php the_content(); ?>
               <a
                 href="<?php the_permalink(); ?>"
                 ><span>
@@ -87,10 +77,9 @@ $queryGalleries = new WP_Query(
       </div>
     </section>
    
-             <?php  
+<?php  
  require_once( get_template_directory() . '/template/template-talk.php');
-?>
- <?php 
  require_once( get_template_directory() . '/template/template-member.php');
 ?>
+
 <?php get_footer(); ?>

@@ -64,6 +64,9 @@
     text-align: center;
   }
 }
+.auto-height .aigpl-img-wrp {
+  height: auto !important;
+}
 * {
   padding: 0;
   margin: 0;
