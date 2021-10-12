@@ -63,6 +63,7 @@
   li {
     list-style-type: none;
     color: $color-secondary;
+    pointer-events: none;
 
     a {
       font-family: "poppins-bold";

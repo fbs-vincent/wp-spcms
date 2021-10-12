@@ -38,6 +38,7 @@
         .post-categories {
           li {
             list-style-type: none;
+            pointer-events: none;
 
             a {
               font-family: "poppins-bold";

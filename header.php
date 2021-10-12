@@ -7,6 +7,40 @@
     <title><?php bloginfo('title') ?></title>
     <?php wp_head() ?>
     <link
+      rel="preload"
+      as="font"
+      href="./font/Poppins-Bold.woff2"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="preload"
+      as="font"
+      href="./font/Poppins-Regular.woff2"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="preload"
+      as="font"
+      href="./font/Poppins-Light.woff2"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="preload"
+      as="font"
+      href="./font/Poppins-SemiBold.woff2"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="preload"
+      as="font"
+      href="./font/Poppins-ExtraLight.woff2"
+      crossorigin="anonymous"
+    />
+    <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css"
     />

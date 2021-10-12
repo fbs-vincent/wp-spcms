@@ -95,31 +95,54 @@ function banner_slider() {
         );
         register_post_type( 'galleries', $argsGallery );
 
+    // 	DIRECTORY
+	$labelsDirectory  = array (
+        // Change the label of the cpt
+    'name'          => __('Directories', 'textdomain'), 
+    'singular_name' => __('Directory', 'textdomain'),
+    'add_new'       => __('Add Directory', 'textdomain'),
+    'add_new_item'  => __('Add Directory', 'textdomain'),
+    'edit_item'     => __('Edit Directory', 'textdomain'),
+    'all_items'     => __('All Directories', 'textdomain')
+        );
+
+    $argsDirectory = array( 
+    'labels' => $labelsDirectory,
+    'public'  => true,
+    'show_in_menu'=> true,
+    'capability_type'  => 'post',
+    'taxonomies'=> array( 'category',), 
+    'supports' => array( 'title', 'editor', 'thumbnail'),
+    'rewrite' => array( 'slug' => 'directory' ),  
+    );
+    register_post_type( 'directories', $argsDirectory );
+
 }
 
 
-add_action('init', 'tamar_custom_taxonomy', 0);
-function tamar_custom_taxonomy()
+add_action('init', 'spcms_custom_taxonomy', 0);
+function spcms_custom_taxonomy()
 {
-    $room_type_label = array(
-    'name'              => _x('Room Type', 'taxonomy general name'),
-    'singular_name'     => _x('Room Type', 'taxonomy singular name'),
-    'search_items'      => __('Search Room Type'),
-    'all_items'         => __('All Room Type'),
-    'parent_item'       => __('Parent Room Type'),
-    'parent_item_colon' => __('Parent Room Type:'),
-    'edit_item'         => __('Edit Room Type'),
-    'update_item'       => __('Update Room Type'),
-    'add_new_item'      => __('Add New Room Type'),
-    'new_item_name'     => __('New Room Type Name'),
-    'menu_name'         => __('Room Type'),
+    $doctor_type_label = array(
+    'name'              => _x('Doctor Type', 'taxonomy general name'),
+    'singular_name'     => _x('Doctor Type', 'taxonomy singular name'),
+    'search_items'      => __('Search Doctor Type'),
+    'all_items'         => __('All Doctor Type'),
+    'parent_item'       => __('Parent Doctor Type'),
+    'parent_item_colon' => __('Parent Doctor Type:'),
+    'edit_item'         => __('Edit Doctor Type'),
+    'update_item'       => __('Update Doctor Type'),
+    'add_new_item'      => __('Add New Doctor Type'),
+    'new_item_name'     => __('New Doctor Type Name'),
+    'menu_name'         => __('Doctor Type'),
     );
-    $room_type_args = array(
+    $doctor_type_args = array(
     'hierarchical'      => true, 
-    'labels'            => $room_type_label,
+    'labels'            => $doctor_type_label,
     'show_ui'           => true,
     'show_admin_column' => true,
     'query_var'         => true,
+    'rewrite' => array( 'slug' => 'doctor' ), 
     );
-register_taxonomy('room_type', 'news', $room_type_args);    
+register_taxonomy('doctor_type', 'directories', $doctor_type_args);    
 }
