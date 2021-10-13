@@ -68,17 +68,20 @@
 .auto-height .aigpl-img-wrp {
   height: auto !important;
 }
+.auto-height .aigpl-img {
+  height: 254px !important;
+}
 * {
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  font-size: 1.4rem;
-  font-family: "poppins-regular", sans-serif;
-  text-rendering: inherit;
+  text-rendering: optimizeSpeed;
 }
 body {
   font-family: "poppins-regular", sans-serif;
+  line-height: 1.4rem;
+  font-size: 1.4rem;
 }
 html {
   font-size: 62.5%;
@@ -87,6 +90,7 @@ html {
 p {
   word-break: break-all;
   color: #707070;
+  line-height: 2.2rem !important;
 }
 a {
   text-decoration: none;
@@ -384,18 +388,6 @@ ul li {
 }
 .section-banner--about {
   background-image: url("https://spcms.frontlinebusiness.com.ph/wp-content/uploads/2021/09/banner-about.jpg");
-}
-.section-banner--news {
-  background-image: url("../../dist/assets/img/banner-news.jpg");
-}
-.section-banner--activities {
-  background-image: url("../../dist/assets/img/banner-activities.jpg");
-}
-.section-banner--gallery {
-  background-image: url("../../dist/assets/img/banner-gallery.jpg");
-}
-.section-banner--contact {
-  background-image: url("../../dist/assets/img/banner-contact.jpg");
 }
 .section-banner h1 {
   color: #fff;
@@ -1161,8 +1153,8 @@ ul li {
 .directory__wrapper__member {
   background-color: #ececec;
   padding: 2rem;
-  -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
 }
 .directory__wrapper__member__profile {
   text-align: center;

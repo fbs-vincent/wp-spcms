@@ -93,9 +93,10 @@
       </div>
     </section>
     <?php  if(is_page('about')) 
- require_once( get_template_directory() . '/template/template-member.php');
-?>
-<?php  if(is_page('about')) 
  require_once( get_template_directory() . '/template/template-talk.php');
 ?>
+    <?php  if(is_page('about')) 
+ require_once( get_template_directory() . '/template/template-member.php');
+?>
+
 <?php get_footer(); ?>

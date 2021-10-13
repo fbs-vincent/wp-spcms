@@ -4,31 +4,9 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  // background-image: linear-gradient(
-  //   to right,
-  //   rgba(216, 156, 53, 0.85),
-  //   rgba(0, 102, 0, 0.85)
-  // ) !important;
-  // background-blend-mode: screen !important;
 
   &--about {
     background-image: url("https://spcms.frontlinebusiness.com.ph/wp-content/uploads/2021/09/banner-about.jpg");
-  }
-
-  &--news {
-    background-image: url("../../dist/assets/img/banner-news.jpg");
-  }
-
-  &--activities {
-    background-image: url("../../dist/assets/img/banner-activities.jpg");
-  }
-
-  &--gallery {
-    background-image: url("../../dist/assets/img/banner-gallery.jpg");
-  }
-
-  &--contact {
-    background-image: url("../../dist/assets/img/banner-contact.jpg");
   }
 
   h1 {
