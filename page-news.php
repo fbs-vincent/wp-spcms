@@ -36,7 +36,7 @@
               <ul class="metadata">
               <li class="category"><?php the_category(); ?></li>
                 <li class="date">/ <?php echo get_the_date('M d Y'); ?> /</li>
-                <li class="author"><?php the_author(); ?></li>
+                
               </ul>
               <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
               <p>

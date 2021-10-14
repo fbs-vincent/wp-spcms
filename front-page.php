@@ -1,5 +1,9 @@
 <?php get_header(); ?>
-<section class="banner-slider">
+<section class="banner-slider" style="background-image: linear-gradient(
+      to left,
+      rgba(216, 156, 53, 0.85),
+      rgba(0, 102, 0, 0.85)
+    ),url(<?php echo get_field('home_banner')['url'] ?>) !important">
       <div class="container">
         <div id="splides">
           <div class="splide__track">
@@ -15,7 +19,7 @@
                   <div class="banner-slider__wrapper__content section-title">
                     <h2><?php the_title(); ?></h2>
                     <p>
-                    <?php echo wp_trim_words(get_the_content(), 10); ?>
+                    <?php echo wp_trim_words(get_the_content(), 20); ?>
                     </p>
                     <a
                       href="<?php the_permalink(); ?>"
@@ -55,22 +59,16 @@
             </h2>
             <div class="grid-col-2">
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Maecenas mollis sit amet odio eu gravida. Suspendisse potenti.
-                Phasellus ullamcorper iaculis porta. Praesent vulputate urna
-                sem, feugiat semper est rhoncus sed. Fusce hendrerit justo nec
-                turpis commodo faucibus. Sed tempus convallis suscipit. Sed a
-                sapien at velit vestibulum suscipit. Etiam fringilla viverra
-                ante. Aenean tincidunt tristique efficitur.
+              The Philippine Medical Association recorded the existence of SAN PABLO CITY MEDICAL ASSOCIATION officially on January
+8, 1947. It was on September 30, 1966 that the association was applied for a corporate status. Four months later, on January 10, 1967,
+with the approval of the incorporation under the corporate name “SAN PABLO CITY MEDICAL SOCIETY, INC” by the Securities and
+Exchange Commission, the SPCMS attained a legal personality.
               </p>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Maecenas mollis sit amet odio eu gravida. Suspendisse potenti.
-                Phasellus ullamcorper iaculis porta. Praesent vulputate urna
-                sem, feugiat semper est rhoncus sed. Fusce hendrerit justo nec
-                turpis commodo faucibus. Sed tempus convallis suscipit. Sed a
-                sapien at velit vestibulum suscipit. Etiam fringilla viverra
-                ante. Aenean tincidunt tristique efficitur.
+              Before 1947, the physicians of SPC were associated with other medical groups, being members of the Laguna Medical
+Association based in Sta. Cruz Laguna and that Manila Medical Society. With a deep sense of unity and camaraderie, the leading
+medical practitioners of that time organized the San Pablo City Medical Association with twenty-three charter members; it was headed
+by Dr. Cirilio Cauyan as Charter president and Dr. Archimedes Brion as Secretary.
               </p>
             </div>
           </div>
@@ -87,11 +85,11 @@
       
 
 <?php $latest = new WP_Query( array(
-                     'post_type' => 'post',
+                     'post_type' => 'news',
                      'posts_per_page' => 3, // it will show 3 items only
-                     'meta_key' => 'Group',
-                     'meta_value' => 'Latest',
-                     'paged' =>  ( get_query_var('paged') ? get_query_var('paged') : 1)
+                    //  'meta_key' => 'Group',
+                    //  'meta_value' => 'Latest',
+                    //  'paged' =>  ( get_query_var('paged') ? get_query_var('paged') : 1)
                 ));
                 ?>
 
@@ -110,7 +108,7 @@
               <ul class="metadata">
                 <li class="category"><?php the_category(); ?></li>
                 <li class="date">/ <?php echo get_the_date('M d Y'); ?> /</li>
-                <li class="author"><?php the_author(); ?></li>
+                
               </ul>
               <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
               <p>

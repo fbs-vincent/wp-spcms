@@ -7,10 +7,7 @@
       <div class="container">
         <div class="single__wrapper grid-col-3 grid-col-3--single">
           <div class="single__wrapper__metadata">
-            <ul>
-              <li>Author</li>
-              <li><?php the_author(); ?></li>
-            </ul>
+           
             <ul>
               <li>Posted</li>
               <li><?php echo get_the_date('M d Y'); ?></li>
@@ -28,6 +25,10 @@
               </div>
             </div>
             <div class="single__wrapper__body__content">
+            <?php if(has_post_thumbnail()) {
+                  the_post_thumbnail();
+              }
+              ?>
             <?php the_content(); ?>
             </div>
           </div>

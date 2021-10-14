@@ -16,10 +16,15 @@ html {
   text-rendering: optimizeSpeed;
 }
 
-p {
-  word-break: break-all;
+p,
+ol {
+  // word-break: break-all;
   color: $color-text;
   line-height: 2.2rem !important;
+}
+
+ol {
+  list-style-position: inside;
 }
 
 a {
@@ -27,6 +32,6 @@ a {
   color: inherit;
 }
 
-ul li {
-  word-break: break-all;
-}
+// ul li {
+//   word-break: break-all;
+// }

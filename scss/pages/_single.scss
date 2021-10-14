@@ -3,7 +3,7 @@
 
   &__wrapper {
     &__metadata {
-      @media only screen and (max-width: 580px) {
+      @media only screen and (max-width: 768px) {
         display: flex;
         justify-content: space-around;
         text-align: center;
@@ -24,7 +24,7 @@
           margin-bottom: unset;
         }
 
-        @media only screen and (max-width: 580px) {
+        @media only screen and (max-width: 768px) {
           display: inline-flex;
           flex-direction: column;
           justify-content: space-between;
@@ -65,7 +65,7 @@
         div,
         img {
           margin-bottom: 2rem;
-          word-break: break-all;
+          // word-break: break-all;
         }
 
         img {
@@ -77,6 +77,16 @@
         ol,
         ul {
           list-style-position: inside;
+        }
+
+        span {
+          img {
+            width: unset !important;
+            display: unset !important;
+            height: unset !important;
+            vertical-align: middle;
+            margin-bottom: unset !important;
+          }
         }
       }
     }

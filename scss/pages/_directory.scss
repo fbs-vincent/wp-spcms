@@ -29,18 +29,17 @@
 
         span {
           color: $color-secondary;
+          pointer-events: none;
         }
-        margin-bottom: 2rem;
+        // margin-bottom: 2rem;
       }
 
       &__details {
+        display: none;
         ul {
           display: flex;
           flex-direction: column;
 
-          //   @media only screen and (max-width: 736px) {
-          //     align-items: center;
-          //   }
           li {
             list-style-type: none;
             display: inline-flex;

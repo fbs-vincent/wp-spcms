@@ -2,7 +2,7 @@
 <?php require_once( get_template_directory() . '/template/template-pages-banner.php');?>
 <?php $queryDirectories = new WP_Query( array(
                      'post_type' => 'directories',
-                     'posts_per_page' => 4, 
+                     'posts_per_page' => 12, 
                      'paged' =>  ( get_query_var('paged') ? get_query_var('paged') : 1)
                 ));
 ?>

@@ -29,7 +29,7 @@ $queryGalleries = new WP_Query(
               <ul class="metadata">
           
                 <li class="date"><?php echo get_the_date('M d Y'); ?> /</li>
-                <li class="author"><?php the_author(); ?></li>
+                
               </ul>
 				      <?php the_content(); ?>
             </div>
