@@ -12,6 +12,14 @@
   }
 
   &__wrapper {
+    display: flex;
+    justify-content: space-evenly;
+
+    @media only screen and (max-width: 580px) {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
     &__details {
       &__logo {
         margin-bottom: 4rem;
@@ -23,10 +31,33 @@
           }
         }
       }
+
+      ul li {
+        @media only screen and (max-width: 580px) {
+          flex-direction: column;
+
+          svg {
+            margin-right: unset !important;
+            margin-bottom: 1rem;
+          }
+        }
+      }
+
+      .social-links {
+        li {
+          &:first-child {
+            margin-right: 2rem !important;
+          }
+        }
+      }
     }
 
     &__quicklinks {
-      font-family: 'poppins-semibold';
+      font-family: "poppins-semibold";
+
+      @media only screen and (max-width: 580px) {
+        margin-bottom: 2rem;
+      }
 
       h4 {
         border-bottom: 1px solid $color-secondary;
@@ -49,7 +80,7 @@
     }
 
     &__queries {
-      font-family: 'poppins-semibold';
+      font-family: "poppins-semibold";
       margin-bottom: 6rem;
       h4 {
         border-bottom: 1px solid $color-secondary;
@@ -79,7 +110,7 @@
           display: flex;
           align-items: center;
           color: $color-secondary;
-          font-family: 'poppins-light';
+          font-family: "poppins-light";
 
           svg {
             width: 2rem;

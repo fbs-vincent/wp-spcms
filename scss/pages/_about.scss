@@ -3,18 +3,34 @@
   // background-color: #69cc69;
 
   &__wrapper {
-    display: flex;
-    align-items: center;
+    // display: flex;
+    // align-items: center;
 
-    @media only screen and (max-width: 1024px) {
-      flex-direction: column-reverse;
+    // @media only screen a nd (max-width: 1024px) {
+    //   flex-direction: column-reverse;
+    // }
+
+    .section-title {
+      text-align: center;
+
+      h2 {
+        text-transform: uppercase;
+      }
+    }
+
+    p {
+      margin-bottom: 2rem;
+    }
+
+    a {
+      display: inline-block;
     }
 
     &__img {
       width: 100%;
       position: relative;
       img {
-        width: 100%;
+        width: 50%;
         display: block;
       }
 
