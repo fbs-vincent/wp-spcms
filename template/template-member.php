@@ -5,14 +5,13 @@
             <span>Become a member of</span> SAN PABLO CITY MEDICAL SOCIETY
           </h2>
           <p>
-            Suspendisse a accumsan metus, eget varius lorem. Fusce efficitur
-            magna nec ultrices tempor. Sed scelerisque placerat odio vel
-            scelerisque. Curabitur vitae tempor elit.
+          Membership in the SPCMS shall be duly licensed physicians actively practicing in San Pablo City
+and or residing in San Pablo City and neighboring towns.
           </p>
           <a
             class="btn btn--secondary"
-            href="https://spcms.frontlinebusiness.com.ph/contact/"
-            >Join Us!!!</a
+            href="https://spcms.frontlinebusiness.com.ph/council/"
+            >Executive Council</a
           >
           <a
             class="btn btn--secondary"

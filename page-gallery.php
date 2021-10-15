@@ -25,13 +25,18 @@ $queryGalleries = new WP_Query(
           <div class="card__item">
           
             <div class="card__item__content">
-            <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+            <h3><a href="<?php echo get_field('gallery_link') ?>" target="_blank"><?php the_title(); ?></a></h3>
               <ul class="metadata">
           
-                <li class="date"><?php echo get_the_date('M d Y'); ?> /</li>
+                <li class="date"><?php echo get_the_date('M d Y'); ?></li>
                 
               </ul>
-				      <?php the_content(); ?>
+              <a href="<?php echo get_field('gallery_link') ?>" target="_blank">
+              <?php if(has_post_thumbnail()) {
+                  the_post_thumbnail();
+              }
+              ?>
+              </a>
             </div>
           </div>
           <?php endwhile;

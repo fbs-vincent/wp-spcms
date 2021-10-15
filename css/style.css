@@ -76,6 +76,9 @@
   color: #d89c35;
   font-family: "poppins-light";
 }
+.bold {
+  font-family: "poppins-bold" !important;
+}
 * {
   padding: 0;
   margin: 0;
@@ -245,6 +248,11 @@ a {
   -webkit-transform: translateX(0.5rem);
   transform: translateX(0.5rem);
 }
+.card__item__content a img {
+  width: 100%;
+  display: block;
+  height: auto;
+}
 .contact-details ul li {
   list-style: none;
   display: -webkit-box;
@@ -253,7 +261,7 @@ a {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   color: #fff;
 }
 .contact-details ul li:last-child {
@@ -504,7 +512,6 @@ a {
 .footer p {
   text-align: center;
   color: #cbcbcb;
-  margin-bottom: 1rem;
   font-size: 1.2rem;
   line-height: 1.2rem;
 }
@@ -551,9 +558,6 @@ a {
     margin-bottom: 1rem;
   }
 }
-.footer__wrapper__details .social-links li:first-child {
-  margin-right: 2rem !important;
-}
 .footer__wrapper__quicklinks {
   font-family: "poppins-semibold";
 }
@@ -573,7 +577,7 @@ a {
 .footer__wrapper__quicklinks ul li {
   display: block;
   color: #d89c35;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 .footer__wrapper__quicklinks ul li:last-child {
   margin-bottom: unset;
@@ -622,6 +626,13 @@ a {
 }
 .footer__wrapper__queries ul li:last-child {
   margin-bottom: unset;
+}
+.footer .social-links {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.footer .social-links li:first-child {
+  margin-right: 2rem !important;
 }
 @media (min-width: 320px) {
   .container {
@@ -989,12 +1000,19 @@ a {
   display: inline-block;
 }
 .about-intro__wrapper__img {
-  width: 100%;
+  width: 50%;
   position: relative;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 580px) {
+  .about-intro__wrapper__img {
+    width: 100%;
+  }
 }
 .about-intro__wrapper__img img {
-  width: 50%;
+  width: 100%;
   display: block;
+  margin-bottom: 2rem;
 }
 @media only screen and (max-width: 1024px) {
   .about-intro__wrapper__img {
@@ -1008,7 +1026,7 @@ a {
   top: -10px;
   left: -10px;
   height: 100%;
-  width: inherit;
+  width: 100%;
   z-index: -1;
 }
 .about-intro__wrapper__content {

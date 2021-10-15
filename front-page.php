@@ -59,13 +59,7 @@
             </h2>
            
               <p>
-              The Philippine Medical Association recorded the existence of SAN PABLO CITY MEDICAL ASSOCIATION officially on January
-8, 1947. It was on September 30, 1966 that the association was applied for a corporate status. Four months later, on January 10, 1967,
-with the approval of the incorporation under the corporate name “SAN PABLO CITY MEDICAL SOCIETY, INC” by the Securities and
-Exchange Commission, the SPCMS attained a legal personality. Before 1947, the physicians of SPC were associated with other medical groups, being members of the Laguna Medical
-Association based in Sta. Cruz Laguna and that Manila Medical Society. With a deep sense of unity and camaraderie, the leading
-medical practitioners of that time organized the San Pablo City Medical Association with twenty-three charter members; it was headed
-by Dr. Cirilio Cauyan as Charter president and Dr. Archimedes Brion as Secretary.
+              San Pablo City Medical Society is an association of medical professionals of San Pablo City, Philippines, conscious of their duties and responsibilities to God, to their country and to their countrymen, as well as to their Hippocratic Oath in order to pursue its goals towards quality health care service beyond the call of duty not only to the San Pableños but also to all Filipinos.
               </p>
            
           </div>

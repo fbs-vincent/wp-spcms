@@ -67,6 +67,12 @@
             transform: translateX(0.5rem);
           }
         }
+
+        img {
+          width: 100%;
+          display: block;
+          height: auto;
+        }
       }
     }
   }
