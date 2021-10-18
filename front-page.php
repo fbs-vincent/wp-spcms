@@ -50,7 +50,7 @@
       <div class="container">
         <div class="grid-col-2 about__wrapper">
           <div class="about__wrapper__img">
-            <img src="https://spcms.frontlinebusiness.com.ph/wp-content/uploads/2021/10/about-img.jpg" alt="aboutimg" />
+            <img src="https://spcms.frontlinebusiness.com.ph/wp-content/uploads/2021/10/137610147_3686948198064521_6522228170447641157_n.jpg" alt="aboutimg" />
           </div>
           <div class="about__wrapper__content section-title">
             <h2>

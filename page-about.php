@@ -12,7 +12,7 @@
             </h2>
         </div>
         <div class="about-intro__wrapper__img">
-            <img src="https://spcms.frontlinebusiness.com.ph/wp-content/uploads/2021/10/about-intro-img.jpg" alt="" />
+            <img src="https://spcms.frontlinebusiness.com.ph/wp-content/uploads/2021/10/138062653_3686948661397808_3424766767990308183_n.jpg" alt="" />
           </div>
             <p>
             The Philippine Medical Association recorded the existence of SAN PABLO CITY MEDICAL ASSOCIATION officially on January

@@ -671,6 +671,11 @@ a {
     grid-template-columns: 1fr;
   }
 }
+@media only screen and (max-width: 768px) {
+  .grid-col-2--council {
+    grid-gap: unset !important;
+  }
+}
 .grid-col-3 {
   display: -ms-grid;
   display: grid;
@@ -1128,6 +1133,63 @@ a {
 }
 .activities {
   padding: 8vh 0;
+}
+.council {
+  padding: 8vh 0;
+}
+.council__executive {
+  margin-bottom: 4rem;
+}
+.council h2 {
+  color: #060;
+  line-height: clamp(2.2rem, 8vw, 4rem);
+  font-size: clamp(2.2rem, 8vw, 3rem);
+  font-family: "poppins-bold";
+  margin-bottom: 4rem;
+  text-align: center;
+}
+@media only screen and (max-width: 414px) {
+  .council h2 {
+    text-align: center;
+  }
+}
+.council ul li {
+  list-style-type: none;
+  text-align: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.council ul li:first-child h4 {
+  margin-top: unset !important;
+}
+.council ul li h4 {
+  color: #060;
+  font-family: "poppins-bold";
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+  margin-top: 1rem;
+  text-align: right;
+}
+@media only screen and (max-width: 991px) {
+  .council ul li h4 {
+    margin-top: 2rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .council ul li h4 {
+    text-align: center;
+  }
+}
+.council ul li span {
+  color: #d89c35;
+  pointer-events: none;
+  text-align: left;
+}
+@media only screen and (max-width: 768px) {
+  .council ul li span {
+    text-align: center;
+  }
 }
 .contact {
   padding: 8vh 0;

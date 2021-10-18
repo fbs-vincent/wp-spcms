@@ -33,7 +33,7 @@
             </div>
           </div>
           <div class="single__wrapper__share">
-            <a href="#">Share</a>
+            <!-- <a href="#">Share</a> -->
           </div>
         </div>
       </div>

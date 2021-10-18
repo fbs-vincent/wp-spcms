@@ -116,6 +116,28 @@ function banner_slider() {
     'rewrite' => array( 'slug' => 'directory' ),  
     );
     register_post_type( 'directories', $argsDirectory );
+    
+    // 	COUNCIL
+	$labelsCouncil  = array (
+        // Change the label of the cpt
+    'name'          => __('Councils', 'textdomain'), 
+    'singular_name' => __('Council', 'textdomain'),
+    'add_new'       => __('Add Council', 'textdomain'),
+    'add_new_item'  => __('Add Council', 'textdomain'),
+    'edit_item'     => __('Edit Council', 'textdomain'),
+    'all_items'     => __('All Councils', 'textdomain')
+        );
+
+    $argsCouncil = array( 
+    'labels' => $labelsCouncil,
+    'public'  => true,
+    'show_in_menu'=> true,
+    'capability_type'  => 'post',
+    'taxonomies'=> array( 'category',), 
+    'supports' => array( 'title', 'editor', 'thumbnail'),
+    'rewrite' => array( 'slug' => 'directory' ),  
+    );
+    register_post_type( 'councils', $argsCouncil );
 
 }
 
@@ -123,6 +145,8 @@ function banner_slider() {
 add_action('init', 'spcms_custom_taxonomy', 0);
 function spcms_custom_taxonomy()
 {
+
+    // DIRECTORY - DOCTOR TYPE
     $doctor_type_label = array(
     'name'              => _x('Doctor Type', 'taxonomy general name'),
     'singular_name'     => _x('Doctor Type', 'taxonomy singular name'),
@@ -144,5 +168,30 @@ function spcms_custom_taxonomy()
     'query_var'         => true,
     'rewrite' => array( 'slug' => 'doctor' ), 
     );
-register_taxonomy('doctor_type', 'directories', $doctor_type_args);    
+register_taxonomy('doctor_type', 'directories', $doctor_type_args);   
+
+
+    // COUNCIL - ROLE TYPE
+    $role_type_label = array(
+    'name'              => _x('Role Type', 'taxonomy general name'),
+    'singular_name'     => _x('Role Type', 'taxonomy singular name'),
+    'search_items'      => __('Search Role Type'),
+    'all_items'         => __('All Role Type'),
+    'parent_item'       => __('Parent Role Type'),
+    'parent_item_colon' => __('Parent Role Type:'),
+    'edit_item'         => __('Edit Role Type'),
+    'update_item'       => __('Update Role Type'),
+    'add_new_item'      => __('Add New Role Type'),
+    'new_item_name'     => __('New Role Type Name'),
+    'menu_name'         => __('Role Type'),
+    );
+    $role_type_args = array(
+    'hierarchical'      => true, 
+    'labels'            => $role_type_label,
+    'show_ui'           => true,
+    'show_admin_column' => true,
+    'query_var'         => true,
+    'rewrite' => array( 'slug' => 'role' ), 
+    );
+register_taxonomy('role_type', 'councils', $role_type_args);    
 }

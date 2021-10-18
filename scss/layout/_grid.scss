@@ -32,6 +32,12 @@
   @media only screen and (max-width: 768px) {
     grid-template-columns: 1fr;
   }
+
+  &--council {
+    @media only screen and (max-width: 768px) {
+      grid-gap: unset !important;
+    }
+  }
 }
 
 .grid-col-3 {
