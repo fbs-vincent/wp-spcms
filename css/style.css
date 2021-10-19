@@ -1099,6 +1099,11 @@ a {
 .about-vision {
   padding: 8vh 0;
 }
+.about-vision__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 .about-vision__wrapper__img {
   width: 100%;
   display: -webkit-box;
@@ -1159,16 +1164,16 @@ a {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  margin-bottom: 1rem;
 }
-.council ul li:first-child h4 {
-  margin-top: unset !important;
+.council ul li:last-child {
+  margin-bottom: unset !important;
 }
 .council ul li h4 {
   color: #060;
   font-family: "poppins-bold";
   font-size: 1.8rem;
   line-height: 1.8rem;
-  margin-top: 1rem;
   text-align: right;
 }
 @media only screen and (max-width: 991px) {

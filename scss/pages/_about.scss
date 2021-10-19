@@ -1,15 +1,7 @@
 .about-intro {
   padding: 8vh 0;
-  // background-color: #69cc69;
 
   &__wrapper {
-    // display: flex;
-    // align-items: center;
-
-    // @media only screen a nd (max-width: 1024px) {
-    //   flex-direction: column-reverse;
-    // }
-
     .section-title {
       text-align: center;
 
@@ -59,7 +51,7 @@
 
     &__content {
       width: 100%;
-      // background-color: rgba($color: $color-light, $alpha: 0.8);
+
       h2 {
         text-transform: uppercase;
         @media only screen and (max-width: 1024px) {
@@ -129,6 +121,7 @@
   padding: 8vh 0;
 
   &__wrapper {
+    display: flex;
     &__img {
       width: 100%;
       display: flex;

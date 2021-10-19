@@ -21,11 +21,10 @@
     list-style-type: none;
     text-align: center;
     align-items: center;
+    margin-bottom: 1rem;
 
-    &:first-child {
-      h4 {
-        margin-top: unset !important;
-      }
+    &:last-child {
+      margin-bottom: unset !important;
     }
 
     h4 {
@@ -33,7 +32,6 @@
       font-family: "poppins-bold";
       font-size: 1.8rem;
       line-height: 1.8rem;
-      margin-top: 1rem;
       text-align: right;
 
       @media only screen and (max-width: 991px) {
