@@ -6,8 +6,9 @@
 
 <?php $queryNews = new WP_Query( array(
                      'post_type' => 'news',
-                     'posts_per_page' => 3, // it will show 3 items only
-                     'paged' =>  ( get_query_var('paged') ? get_query_var('paged') : 1)
+                     'posts_per_page' => 6, // it will show 3 items only
+                     'paged' =>  ( get_query_var('paged') ? get_query_var('paged') : 1),
+                     'order' => 'DESC',
                 ));
 ?>
 

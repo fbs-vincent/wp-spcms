@@ -9,7 +9,7 @@
                      'post_type' => 'directories',
                      'posts_per_page' => 10, 
                      'paged' =>  ( get_query_var('paged') ? get_query_var('paged') : 1),
-                     'order' => 'ASC',
+                     'order' => 'DESC',
                 ));
 ?>
                  

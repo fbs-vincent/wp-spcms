@@ -253,6 +253,11 @@ a {
   display: block;
   height: auto;
 }
+@media only screen and (max-width: 580px) {
+  .contact-details {
+    margin-bottom: 4rem;
+  }
+}
 .contact-details ul li {
   list-style: none;
   display: -webkit-box;
@@ -384,7 +389,7 @@ a {
   color: #d89c35;
 }
 .pagination {
-  text-align: right;
+  text-align: center;
   margin: 2rem 0;
 }
 .pagination a {
@@ -540,6 +545,11 @@ a {
 }
 .footer__wrapper__details__logo img {
   display: block;
+}
+@media only screen and (max-width: 580px) {
+  .footer__wrapper__details__logo img {
+    margin: 0 auto;
+  }
 }
 @media only screen and (max-width: 414px) {
   .footer__wrapper__details__logo img {
@@ -989,6 +999,80 @@ a {
 .talk a {
   text-transform: uppercase;
 }
+.fourzerofour {
+  padding: 8vh 0;
+}
+.fourzerofour__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+}
+@media only screen and (max-width: 768px) {
+  .fourzerofour__wrapper {
+    display: unset;
+  }
+}
+.fourzerofour__wrapper__content {
+  width: 100%;
+}
+.fourzerofour__wrapper__content h1 {
+  color: #060;
+  line-height: clamp(2.2rem, 8vw, 5rem);
+  font-size: clamp(2.2rem, 8vw, 4rem);
+  text-transform: uppercase;
+  font-family: "poppins-bold";
+  margin-bottom: 4rem;
+}
+.fourzerofour__wrapper__content p {
+  font-family: "poppins-bold";
+  margin-bottom: 4rem;
+}
+.fourzerofour__wrapper__content a {
+  font-family: "poppins-semibold";
+  color: #d89c35;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.fourzerofour__wrapper__content a span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 1rem;
+  -webkit-transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
+}
+.fourzerofour__wrapper__content a span svg {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+.fourzerofour__wrapper__content a:hover span {
+  -webkit-transform: translateX(0.5rem);
+  transform: translateX(0.5rem);
+}
+@media only screen and (max-width: 768px) {
+  .fourzerofour__wrapper__content a {
+    margin-bottom: 4rem;
+  }
+}
+.fourzerofour__wrapper__img {
+  width: 100%;
+}
+.fourzerofour__wrapper__img img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 .about-intro {
   padding: 8vh 0;
 }
@@ -1175,11 +1259,6 @@ a {
   font-size: 1.8rem;
   line-height: 1.8rem;
   text-align: right;
-}
-@media only screen and (max-width: 991px) {
-  .council ul li h4 {
-    margin-top: 2rem;
-  }
 }
 @media only screen and (max-width: 768px) {
   .council ul li h4 {

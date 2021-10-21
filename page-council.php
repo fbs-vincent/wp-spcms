@@ -9,6 +9,7 @@
                      'posts_per_page' => -1, 
                      'meta_key' => 'member_type',
                      'meta_value' => 'Council',
+                     'order' => 'DESC',
                 ));
                 ?>
                  
@@ -34,6 +35,7 @@
                      'posts_per_page' => -1, 
                      'meta_key' => 'member_type',
                      'meta_value' => 'Committee',
+                     'order' => 'DESC',
                 ));
                 ?>
                  

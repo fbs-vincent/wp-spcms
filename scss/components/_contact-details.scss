@@ -1,4 +1,7 @@
 .contact-details {
+  @media only screen and (max-width: 580px) {
+    margin-bottom: 4rem;
+  }
   ul li {
     list-style: none;
     display: flex;
